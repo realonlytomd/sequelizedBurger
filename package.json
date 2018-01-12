@@ -1,27 +1,32 @@
 {
-  "name": "burger",
+  "name": "sequelizedburger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "init": "^0.1.2",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "sequelize": "^4.31.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^3.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/realonlytomd/burger.git"
+    "url": "git+https://github.com/realonlytomd/sequelizedBurger.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/realonlytomd/burger/issues"
+    "url": "https://github.com/realonlytomd/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/realonlytomd/burger#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.10",
-    "mysql": "^2.15.0"
-  }
+  "homepage": "https://github.com/realonlytomd/sequelizedBurger#readme"
 }
