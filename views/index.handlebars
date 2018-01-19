@@ -2,7 +2,7 @@
 
   <div class="row">
 
-    <img src="../public/assets/img/burger.png" alt="burgerpic">
+    <img src="../assets/img/burger.png" alt="burgerpic">
 
     <h1>Eat Da Burger!</h1>
 
@@ -19,7 +19,7 @@
       <h3>Yummy Burgers to Eat</h3>
 
       <ul>
-        {{#each burgers}}
+        {{#each burger}}
           {{#unless devoured}}
             {{> burgers/burger-block devour=true}}
           {{/unless}}
@@ -33,7 +33,7 @@
       <h3>Burgers Already Eaten</h3>
 
       <ul>
-        {{#each burgers}}
+        {{#each burger}}
           {{#if devoured}}
             {{> burgers/burger-block-nobutton devour=false}}
           {{/if}}

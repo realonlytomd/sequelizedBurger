@@ -20,7 +20,10 @@ module.exports = function(router) {
   router.get("/", function(req, res) {
     db.Burger.findAll({})
     .then(function(dbBurger) {
-      res.json(dbBurger);
+      console.log(dbBurger);
+      var burger = {burger:dbBurger};
+      console.log(burger);
+      res.render("index",burger);
     });
   });
 
