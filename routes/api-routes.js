@@ -40,11 +40,13 @@ module.exports = function(router) {
 
   // PUT route for updating devoured
   router.put("/api/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-    db.Burger.update({
-      devoured: req.body.devoured
-    })
-    .then(condition, function(result) {
+    db.Burger.update(
+      req.body,{
+      where: {
+      id: req.params.id
+    }
+  })
+    .then(function(result) {
       res.json(result);
     });
   });

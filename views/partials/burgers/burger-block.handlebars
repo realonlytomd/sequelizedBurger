@@ -1,10 +1,10 @@
 <li>
   <div>
     <p>
-      {{id}}. {{burger_name}}
+      {{this.dataValues.id}}. {{this.dataValues.burger_name}}
     </p>
 
-    <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
+    <button class="change-devour" data-id="{{this.dataValues.id}}" data-newdevour="{{devour}}">
 			{{#if devour}}Devour it!{{/if}}
 	  </button>
 
